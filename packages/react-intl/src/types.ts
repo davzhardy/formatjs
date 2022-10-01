@@ -22,8 +22,6 @@ export interface ResolvedIntlConfig
   wrapRichTextChunksInFragment?: boolean
 }
 
-export interface IntlShape
-  extends ResolvedIntlConfig,
-    IntlFormatters<React.ReactNode> {
+export interface IntlShape extends ResolvedIntlConfig, IntlFormatters {
   formatters: Formatters
 }

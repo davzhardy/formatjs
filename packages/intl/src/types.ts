@@ -106,7 +106,7 @@ export type FormatDisplayNameOptions = Omit<
   'localeMatcher'
 >
 
-export interface IntlFormatters<T = any, R = T> {
+export interface IntlFormatters {
   formatDateTimeRange(
     from: Parameters<DateTimeFormat['formatRange']>[0],
     to: Parameters<DateTimeFormat['formatRange']>[1],
@@ -150,7 +150,7 @@ export interface IntlFormatters<T = any, R = T> {
     values?: Record<string, PrimitiveType | FormatXMLElementFn<string, string>>,
     opts?: IntlMessageFormatOptions
   ): string
-  formatMessage(
+  formatMessage<T = any, R = T>(
     descriptor: MessageDescriptor,
     values?: Record<string, PrimitiveType | T | FormatXMLElementFn<T, R>>,
     opts?: IntlMessageFormatOptions
@@ -160,17 +160,17 @@ export interface IntlFormatters<T = any, R = T> {
     values?: Record<string, PrimitiveType | FormatXMLElementFn<string, string>>,
     opts?: IntlMessageFormatOptions
   ): string
-  $t(
+  $t<T = any, R = T>(
     descriptor: MessageDescriptor,
     values?: Record<string, PrimitiveType | T | FormatXMLElementFn<T, R>>,
     opts?: IntlMessageFormatOptions
   ): R
   formatList(values: ReadonlyArray<string>, opts?: FormatListOptions): string
-  formatList(
+  formatList<T = any>(
     values: ReadonlyArray<string | T>,
     opts?: FormatListOptions
   ): T | string | Array<string | T>
-  formatListToParts(
+  formatListToParts<T = any>(
     values: ReadonlyArray<string | T>,
     opts?: FormatListOptions
   ): Part[]
