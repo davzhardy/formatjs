@@ -77,9 +77,9 @@ http_file(
 # resolve transitive dep
 http_archive(
     name = "aspect_rules_esbuild",
-    sha256 = "c5af277eb0692fa69212c1eb4d44cb8936ae4e0f518f5a12ac11abf1b976e63b",
-    strip_prefix = "rules_esbuild-fe714f6fc18f1b5e81beb9e4de42ccb1cd8c45de",
-    url = "https://github.com/aspect-build/rules_esbuild/archive/fe714f6fc18f1b5e81beb9e4de42ccb1cd8c45de.tar.gz",
+    sha256 = "33846eb2fcadbb46278b2df268e20bb7b0379fc1f3a20b0db50eaa37cff45c25",
+    strip_prefix = "rules_esbuild-1097cc41922a170ca6f2e9e047293d361bcb9e13",
+    url = "https://github.com/aspect-build/rules_esbuild/archive/1097cc41922a170ca6f2e9e047293d361bcb9e13.tar.gz",
 )
 
 load("@aspect_rules_esbuild//esbuild:dependencies.bzl", "rules_esbuild_dependencies")
