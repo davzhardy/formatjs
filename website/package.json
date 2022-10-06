@@ -15,17 +15,17 @@
     ]
   },
   "devDependencies": {
-    "@algolia/client-search": "^4.14.2",
-    "@docusaurus/core": "2",
-    "@docusaurus/plugin-google-analytics": "2",
-    "@docusaurus/preset-classic": "2",
-    "@docusaurus/theme-common": "2",
-    "@docusaurus/theme-live-codeblock": "2",
-    "classnames": "^2.2.6",
-    "react-dom": "^16.6.0 || 17",
-    "prism-react-renderer": "^1.3.3",
-    "@mdx-js/react": "^2.1.2",
-    "react-live": "2",
-    "react": "^16.6.0 || 17"
+    "@algolia/client-search": "4.14.2",
+    "@docusaurus/core": "2.1.0",
+    "@docusaurus/plugin-google-analytics": "2.1.0",
+    "@docusaurus/preset-classic": "2.1.0",
+    "@docusaurus/theme-common": "2.1.0",
+    "@docusaurus/theme-live-codeblock": "2.1.0",
+    "classnames": "2.3.2",
+    "react-dom": "17.0.2",
+    "prism-react-renderer": "1.3.5",
+    "@mdx-js/react": "2.1.4",
+    "react-live": "2.4.1",
+    "react": "17.0.2"
   }
 }
